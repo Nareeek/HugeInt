@@ -1,0 +1,6 @@
+.ccls-cache/
+.breakpoints
+.replit
+*.o
+replit.nix
+main
