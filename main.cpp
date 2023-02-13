@@ -6,7 +6,6 @@ integers of huge sizes (several hundreds of digits long).
 */
 int main() {
 	// generateAllTestCases();
-	int times = 120;
 	string bigStr = generateBigString(9, "1234567890");
 	HugeInt A;
 	HugeInt B(MAX);
@@ -18,5 +17,10 @@ int main() {
 	// A = power(A, times);
 	// B = power(B, times);
 	// cout << "b = " << B << endl;
-	cout << A * B << endl;
+
+	cout.precision(5);
+
+	cout << operationTime(B, C, '*') << endl;
+	cout << operationTime(B, D, '+') << endl;
+	cout << operationTime(B, bigStr, '*') << endl;
 }

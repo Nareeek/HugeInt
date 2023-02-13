@@ -33,6 +33,7 @@ string subtractTwoPositiveNumericStrings(const string& str1, const string& str2)
 string repeatSumDigitsTime(const string& str, const int& times, const int& baseTen);
 string generateBigString(const int& times, const string customInitialString = "1234567890");
 
+
 void generateAllTestCases();
 void chainingOperationsTest();
 void multipliesTest();
@@ -66,3 +67,4 @@ HugeInt checkingNumbers(const int& firstNumber, const int& secondNumber);
 HugeInt multiplyOrSumBigNumbers(const int& firstNumber, const int& secondNumber, const string& firstString, const string& secondString, string (*function)(const string&, const string&));
 HugeInt normalOperation(const int& firstNumber, const int& secondNumber, string (*function)(const string&, const string&), bool isSum);
 HugeInt power(HugeInt number, int times);
+double operationTime(const HugeInt& first, const HugeInt& second, const char& ch);
